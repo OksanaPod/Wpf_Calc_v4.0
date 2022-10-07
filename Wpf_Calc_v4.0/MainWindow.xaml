@@ -1,0 +1,43 @@
+﻿<Window x:Class="Wpf_Calc_v4._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Calc_v4._0"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="Result" Grid.Row="0" Background="#FFCAE2E2" Margin="5" Padding="10" FontSize="36" TextWrapping="Wrap" TextAlignment="Right">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="#FFA39898" Direction="150"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <UniformGrid x:Name="ButtonGrid" Grid.Row ="1" Rows="7" Columns="3">
+            <Button Content="%" Background="#FFBFAEAE" Padding="15" />
+            <Button Content="C" Background="#FFE2EA61" />
+            <Button Content="⇐" Background="#FFBFAEAE" />
+            <Button Content="√x" Background="#FFBFAEAE" />
+            <Button Content="x²" Background="#FFBFAEAE" />
+            <Button Content="*" Background="#FFBFAEAE" />
+            <Button Content="+" Background="#FFBFAEAE" />
+            <Button Content="-" Background="#FFBFAEAE" />
+            <Button Content="/" Background="#FFBFAEAE" />
+            <Button Content="7" Background="White"/>
+            <Button Content="8" Background="White"/>
+            <Button Content="9" Background="White"/>
+            <Button Content="4" Background="White"/>
+            <Button Content="5" Background="White"/>
+            <Button Content="6" Background="White"/>
+            <Button Content="1" Background="White"/>
+            <Button Content="2" Background="White"/>
+            <Button Content="3" Background="White"/>
+            <Button Content="0" Background="#FFAFAFAF"/>
+            <Button Content="," Background="#FFAFAFAF"/>
+            <Button Content="=" Background="#FF71E878"/>
+        </UniformGrid>
+    </Grid>
+</Window>
